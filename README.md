@@ -10,10 +10,12 @@ Install the fonts by yourself.
 
 你可能需要自己安装一些字体，当然，这只是个人习惯（
 
-- text: ("CMU Serif", "Source Han Serif SC"),
+- text: ("[CMU Serif](https://font.download/font/cmu-serif)", "Source Han Serif SC"),
 - sans: ("Source Han Sans SC"),
-- code: ("JetBrains Mono", "Consolas"),
+- code: ("[Sarasa Term SC](https://github.com/be5invis/Sarasa-Gothic)","[JetBrains Mono](https://www.jetbrains.com/lp/mono/)", "Consolas"),
+- math: ("[Libertinus Math](https://font.download/font/libertinus-math)")
 
+[Sarasa Term SC](https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/LatestRelease/), Source Han Sans/Serif SC (或称 Noto Sans/Serif CJK SC) 可以在 Tuna Mirror 下载。
 ## Usage
 
 - Install [Typst](https://typst.app)

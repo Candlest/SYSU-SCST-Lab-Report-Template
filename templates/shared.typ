@@ -9,7 +9,10 @@
 
   show raw.where(block: true): block.with(fill: luma(240), inset: (x: 1.25em, y: 1em), width: 100%, radius: 4pt)
 
-  show raw.where(block: true): par.with(first-line-indent: 0em, justify: true, leading: 8pt)
+  // 在 Typst 0.13+ 中，会导致代码块无法正常显示，暂时注释掉
+  // 在 Typst 0.13+ 中，代码块似乎默认无首行缩进
+  //show raw.where(block: true): par.with(first-line-indent: 0em, justify: true, leading: 8pt)
+  show raw.where(block: true): set par(justify: true, leading: 8pt)
 
   show raw.where(block: false): box.with(
     fill: luma(240),
@@ -20,15 +23,17 @@
 
   show raw: text.with(font: fonts.monospace + fonts.sans, size: 1em)
 
-  set heading(numbering: (..numbers) => {
-    let level = numbers.pos().len();
+  set heading(
+    numbering: (..numbers) => {
+      let level = numbers.pos().len()
 
-    if (level == 1) {
-      return numbering("一. ", numbers.pos().at(level - 1))
-    } else {
-      return numbering("1.1. ", ..numbers.pos().slice(1, level))
-    }
-  })
+      if (level == 1) {
+        return numbering("一. ", numbers.pos().at(level - 1))
+      } else {
+        return numbering("1.1. ", ..numbers.pos().slice(1, level))
+      }
+    },
+  )
 
   show heading: it => [
     // Cancel indentation for headings of level 2 or above
@@ -54,6 +59,8 @@
   ]
 
   show link: underline
+
+  show math.equation: set text(font: ("Libertinus Math"))
   set math.vec(delim: "[")
   set math.mat(delim: "[")
   set par(spacing: line_height)
