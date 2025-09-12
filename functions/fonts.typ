@@ -1,9 +1,9 @@
 #let line_height = 1em
 
 #let fonts = (
-  serif: ("Source Han Serif SC", "Source Han Serif"),
-  sans: ("Source Han Sans SC", "Source Han Sans"),
-  monospace: ("JetBrains Mono", "Consolas"),
+  serif: "SimSun",
+  sans: "SimHei",
+  monospace: ("Consolas", "SimSun"),
   math: ("Libertinus Math")
 )
 
