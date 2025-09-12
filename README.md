@@ -8,7 +8,11 @@ SYSU-SCST Digital electronics Lab Report
 
 基于 [GZ-Typst-Templates](https://github.com/GZTimeWalker/GZ-Typst-Templates) 的 Typst 数字电路与逻辑设计实验报告模板，应网络空间安全学院课程需要而魔改。
 
+![](./demo.svg)
+
 ## Fonts
+
+从 [CUMCM-typst-template](https://github.com/a-kkiri/CUMCM-typst-template) <del>偷的</del><ins>借鉴的</ins>：
 
 ```typst
 #let fonts = (
