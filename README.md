@@ -10,6 +10,14 @@ SYSU-SCST Digital electronics Lab Report
 
 ![](./demo.svg)
 
+## Features
+
+- [x] 封面页面不显示页码，页码从第二页开始统计
+- [x] 重绘一个 SYSU-SCST 的高清 LOGO
+- [ ] 添加针对 typst.app 的使用方法
+- [ ] 添加电路绘制、插入三线表、插入 Verilog 的指南
+
+
 ## Fonts
 
 从 [CUMCM-typst-template](https://github.com/a-kkiri/CUMCM-typst-template) <del>偷的</del><ins>借鉴的</ins>：
